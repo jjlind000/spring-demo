@@ -11,6 +11,9 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 
 //http://www.java2novice.com/spring/
+//context:.. https://howtodoinjava.com/spring-mvc/spring-mvc-difference-between-contextannotation-config-vs-contextcomponent-scan/
+//also for properties: http://websystique.com/spring/spring-propertysource-value-annotations-example/
+//postprocessing: https://grokonez.com/spring-framework/spring-bean-post-processors
 public class Main {
 
     public static void main(String... args) {
