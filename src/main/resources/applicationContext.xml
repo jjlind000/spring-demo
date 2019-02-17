@@ -1,0 +1,38 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+    <!--<context:annotation-config />-->
+    <context:component-scan base-package="com.java2novice.bean"/>
+    
+    <bean id="colorManager" class="com.java2novice.bean.ColorManager">
+        <property name="myColor" ref="blueColor"/>
+    </bean>
+
+    <bean id="blueColor" class="com.java2novice.bean.BlueColor"/>
+
+    <bean id="employeeBean" class="com.java2novice.bean.Employee">
+
+        <property name="empId" value="1016"/>
+        <property name="name" value="Nataraj"/>
+        <property name="role" value="Manager"/>
+
+    </bean>
+
+
+<!--    <context:property-placeholder location="classpath:db.properties,app.properties" />
+
+    <bean id="dbConfig" class="com.java2novice.bean.MyDbConfig">
+        <property name="dbHost" value="${db.host.url}"/>
+        <property name="dbPort" value="${db.port.number}"/>
+        <property name="dbService" value="${db.service.name}"/>
+        <property name="dbUrl" value="${db.user}"/>
+        <property name="dbPassword" value="${db.password}"/>
+        <property name="key1" value="${k1}"/>
+
+    </bean>-->
+
+
+</beans>
